@@ -1,7 +1,7 @@
 class TerraformProviderSakuracloud < Formula
 
-  _version = "0.10.0"
-  sha256_src = "2ef131e88f63d0c348238e9ab9caf69d391ef8ba54a6c7e16c02e8ff2f1a57d4"
+  _version = "0.10.1"
+  sha256_src = "80e661e8f1c853f0b0853675b43b70326de29efa91ad8c6a5275a57dd866d454"
 
   desc "Terraform provider plugin for SakuraCloud"
   homepage "https://github.com/sacloud/terraform-provider-sakuracloud"
