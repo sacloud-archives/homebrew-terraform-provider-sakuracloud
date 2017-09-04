@@ -1,8 +1,8 @@
 class TerraformProviderSakuracloud < Formula
 
-  _version = "0.11.0"
-  sha256_src_darwin = "5367d7ec3be3c7137e100394a16f04646e5830001d2ed69f2b90798b3c960491"
-  sha256_src_linux = "7e7f159026f703d81eb17edcd35a2ab4f1d5ccc6175119c194c9e54e61c182bd"
+  _version = "0.12.0"
+  sha256_src_darwin = "5f4c8da7d54855d98826472c6ad4c8219ea8f370d2a1bcb318b8ca4e294618bd"
+  sha256_src_linux = "ecb325c475b04ca7d7ce5ab3068028172dd77de9ea7d4788f2488ebe723c0e84"
 
   desc "Terraform provider plugin for SakuraCloud"
   homepage "https://github.com/sacloud/terraform-provider-sakuracloud"
@@ -29,7 +29,7 @@ class TerraformProviderSakuracloud < Formula
     To enable, put following text in "~/.terraformrc":
 
         providers {
-            sakuracloud = "#{bin}/terraform-provider-sakuracloud"
+            sakuracloud = "terraform-provider-sakuracloud"
         }
 
   EOS
