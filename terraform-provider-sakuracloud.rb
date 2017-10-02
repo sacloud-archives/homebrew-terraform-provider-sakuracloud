@@ -1,8 +1,8 @@
 class TerraformProviderSakuracloud < Formula
 
-  _version = "0.13.0"
-  sha256_src_darwin = "8b4d36b042ac7947018d7655a1c1b50b0dcd2fce15ed5d52d137d724bbd09ede"
-  sha256_src_linux = "a5abea42b454891b45f1209e2ea6f47271e5c4624d072bdce46319aae355f2cc"
+  _version = "0.13.1"
+  sha256_src_darwin = "491b6e933d7d1eb0eb48214ddc3b8f84bc4b4c421d71a05531939dcac3a11bba"
+  sha256_src_linux = "381b5827b11bd9fa318e9019cf5f6e35df9b6f7cd5ee2c16b5f8312a9f18892b"
 
   desc "Terraform provider plugin for SakuraCloud"
   homepage "https://github.com/sacloud/terraform-provider-sakuracloud"
