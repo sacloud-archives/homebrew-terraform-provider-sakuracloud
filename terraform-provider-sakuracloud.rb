@@ -1,9 +1,8 @@
 class TerraformProviderSakuracloud < Formula
 
-  _version = "1.0.0"
-  sha256_src_darwin = "31476924fef482e8961a9d9800d4ea3109a3d1f58b23808300730d65c83f92e7"
-  sha256_src_linux = "ad1ec61e49e942ce12168085587bc5485b5cb90fb2a1f521b7ae30a52c086b6d"
-  bin_name = "terraform-provider-sakuracloud_#{_version}_x4"
+  _version = "1.0.1"
+  sha256_src_darwin = "1209b7dbf7bd29d9534468a623747eeee2603851654e87947c3580f5d823c9bb"
+  sha256_src_linux = "186f53a79b8fc4e1755e7832c54eb678af3c07e5940dca21437f585def704ea8"
 
   desc "Terraform provider plugin for SakuraCloud"
   homepage "https://github.com/sacloud/terraform-provider-sakuracloud"
@@ -21,7 +20,7 @@ class TerraformProviderSakuracloud < Formula
   depends_on "terraform" => :run
 
   def install
-    bin.install "terraform-provider-sakuracloud_v1.0.0_x4"
+    bin.install "terraform-provider-sakuracloud_v1.0.1_x4"
   end
 
   def caveats; <<-EOS.undent
@@ -30,7 +29,7 @@ class TerraformProviderSakuracloud < Formula
     To enable, put following text in "~/.terraformrc":
 
         providers {
-            sakuracloud = "#{bin}/terraform-provider-sakuracloud_v1.0.0_x4"
+            sakuracloud = "#{bin}/terraform-provider-sakuracloud_v1.0.1_x4"
         }
 
   EOS
