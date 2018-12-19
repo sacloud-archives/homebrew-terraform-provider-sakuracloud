@@ -1,8 +1,8 @@
 class TerraformProviderSakuracloud < Formula
 
-  _version = "1.9.0"
-  sha256_src_darwin = "9fb95d7066ded72d76969fe9504407328ab4870f1c7f7940f6705f5682bcc666"
-  sha256_src_linux = "e391d454aabb1c23dd977dbd68af5ae8e7b68db2cd9b1a7e8990390b224f4128"
+  _version = "1.9.1"
+  sha256_src_darwin = "c0101180ee129a48d5146846c6c3b62206f490317d7643c5630c6c3cf454159f"
+  sha256_src_linux = "045495df90076e6af5e9172f44bbc5228c1520775b6e1cf6dfe5d17deb4fd82f"
 
   desc "Terraform provider plugin for SakuraCloud"
   homepage "https://github.com/sacloud/terraform-provider-sakuracloud"
@@ -20,7 +20,7 @@ class TerraformProviderSakuracloud < Formula
   depends_on "terraform"
 
   def install
-    bin.install "terraform-provider-sakuracloud_v1.9.0_x4"
+    bin.install "terraform-provider-sakuracloud_v1.9.1_x4"
   end
 
   def caveats; <<~EOS
@@ -28,7 +28,7 @@ class TerraformProviderSakuracloud < Formula
     This plugin needs to be placed in "~/.terraform.d/plugins" directory.
     To enable, run following command to make symbolic link:
 
-         ln -s #{bin}/terraform-provider-sakuracloud_v1.9.0_x4 ~/.terraform.d/plugins/terraform-provider-sakuracloud_v1.9.0_x4
+         ln -s #{bin}/terraform-provider-sakuracloud_v1.9.1_x4 ~/.terraform.d/plugins/terraform-provider-sakuracloud_v1.9.1_x4
 
   EOS
   end
